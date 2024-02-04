@@ -1,10 +1,10 @@
-# [Guided Interpretable Facial Expression Recognition via Spatial Action Unit Cues](https://arxiv.org/pdf/2402.00281.pdf)
+# [Guided Interpretable Facial Expression Recognition via Spatial Action Unit Cues (ArXiv)](https://arxiv.org/pdf/2402.00281.pdf)
 
 
 by **Soufiane Belharbi<sup>1</sup>, Marco Pedersoli<sup>1</sup>, Alessandro Lameiras Koerich<sup>1</sup>, Simon Bacon<sup>2</sup>, Eric Granger<sup>1</sup>**
 
-<sup>1</sup> LIVIA, Dept. of Systems Engineering, ÉTS, Montreal, Canada,
-
+<sup>1</sup> LIVIA, Dept. of Systems Engineering, ÉTS, Montreal, Canada
+<br/>
 <sup>2</sup> Dept. of Health, Kinesiology \& Applied Physiology, Concordia University, Montreal, Canada
 
 <p align="center"><img src="doc/promo.png" alt="outline" width="60%"></p>
@@ -37,7 +37,7 @@ Our extensive evaluation on two public benchmarks RAFDB, and AFFECTNET datasets 
 * [Overview](#overview)
 * [Install](#reqs)
 * [Datasets](#datasets)
-* [Data preparation](#pre-data)
+* [Data preparation](#prep-data)
 * [Run code](#run)
 
 ## <a name='overview'> Overview</a>:
