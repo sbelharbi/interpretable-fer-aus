@@ -1,4 +1,4 @@
-# [Guided Interpretable Facial Expression Recognition via Spatial Action Unit Cues (ArXiv)](https://arxiv.org/pdf/2402.00281.pdf)
+# [Guided Interpretable Facial Expression Recognition via Spatial Action Unit Cues](https://arxiv.org/pdf/2402.00281.pdf)
 
 
 by **Soufiane Belharbi<sup>1</sup>, Marco Pedersoli<sup>1</sup>, Alessandro Lameiras Koerich<sup>1</sup>, Simon Bacon<sup>2</sup>, Eric Granger<sup>1</sup>**
