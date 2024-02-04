@@ -4,9 +4,10 @@
 by **Soufiane Belharbi<sup>1</sup>, Marco Pedersoli<sup>1</sup>, Alessandro Lameiras Koerich<sup>1</sup>, Simon Bacon<sup>2</sup>, Eric Granger<sup>1</sup>**
 
 <sup>1</sup> LIVIA, Dept. of Systems Engineering, ÉTS, Montreal, Canada,
+
 <sup>2</sup> Dept. of Health, Kinesiology \& Applied Physiology, Concordia University, Montreal, Canada
 
-<p align="center"><img src="doc/promo.png" alt="outline" width="40%"></p>
+<p align="center"><img src="doc/promo.png" alt="outline" width="60%"></p>
 
 
 
