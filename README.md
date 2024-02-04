@@ -34,15 +34,15 @@ Our extensive evaluation on two public benchmarks RAFDB, and AFFECTNET datasets 
 ```
 
 ## Content:
-* [Overview](#overview)
+<!-- * [Overview](#overview) -->
 * [Install](#reqs)
 * [Datasets](#datasets)
 * [Data preparation](#prep-data)
 * [Run code](#run)
 
-## <a name='overview'> Overview</a>:
+<!-- ## <a name='overview'> Overview</a>: -->
 
-<img src="doc/demo.png" alt="Demo" width="600">
+<!-- <img src="doc/demo.png" alt="Demo" width="600">
 <img src="doc/codebook-aus.png" alt="Codebook AUs" width="900">
 <img src="doc/method.png" alt="Method" width="600">
 <img src="doc/cam-cl-perfs.png" alt="CAM Classification performance"
@@ -52,7 +52,7 @@ width="900">
 <img src="doc/attention-maps.png" alt="Attention maps" width="600">
 <img src="doc/cam-maps.png" alt="CAM maps" width="600">
 <img src="doc/ablation-layer.png" alt="Ablation layer" width="600">
-<img src="doc/ablation-lambda.png" alt="Ablation lambda" width="600">
+<img src="doc/ablation-lambda.png" alt="Ablation lambda" width="600"> -->
 
 ## <a name='reqs'> Install</a>:
 
