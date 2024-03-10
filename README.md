@@ -1,4 +1,4 @@
-# [Guided Interpretable Facial Expression Recognition via Spatial Action Unit Cues](https://arxiv.org/pdf/2402.00281.pdf)
+# [Guided Interpretable Facial Expression Recognition via Spatial Action Unit Cues (FG2024)](https://arxiv.org/pdf/2402.00281.pdf)
 
 
 by **Soufiane Belharbi<sup>1</sup>, Marco Pedersoli<sup>1</sup>, Alessandro Lameiras Koerich<sup>1</sup>, Simon Bacon<sup>2</sup>, Eric Granger<sup>1</sup>**
@@ -24,11 +24,10 @@ Our extensive evaluation on two public benchmarks RAFDB, and AFFECTNET datasets 
 
 ## Citation:
 ```
-@article{belharbi24-fer-aus,
+@InProceedings{belharbi24-fer-aus,
   title={Guided Interpretable Facial Expression Recognition via Spatial Action Unit Cues},
   author={Belharbi, S. and Pedersoli, M. and Koerich, A. L. and Bacon, S. and Granger, E.},
-  journal={CoRR},
-  volume={abs/2402.00281},
+  booktitle = {International Conference on Automatic Face and Gesture Recognition},
   year={2024}
 }
 ```
