@@ -27,7 +27,7 @@ Our extensive evaluation on two public benchmarks RAFDB, and AFFECTNET datasets 
 @InProceedings{belharbi24-fer-aus,
   title={Guided Interpretable Facial Expression Recognition via Spatial Action Unit Cues},
   author={Belharbi, S. and Pedersoli, M. and Koerich, A. L. and Bacon, S. and Granger, E.},
-  booktitle = {International Conference on Automatic Face and Gesture Recognition},
+  booktitle={International Conference on Automatic Face and Gesture Recognition},
   year={2024}
 }
 ```
