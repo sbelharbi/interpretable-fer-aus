@@ -12,9 +12,9 @@ by **Soufiane Belharbi<sup>1</sup>, Marco Pedersoli<sup>1</sup>, Alessandro Lame
 
 
 ## Abstract
-Although state-of-the-art classifiers for facial expression recognition (FER) can achieve a high level of accuracy, they lack interpretability, an important feature for end-users. 
-Experts typically associate spatial action units (AU) from a codebook to facial regions for the visual interpretation of expressions. 
-In this paper, the same expert steps are followed. A new learning strategy is proposed to explicitly incorporate AU cues into classifier training, allowing to train deep interpretable models. 
+Although state-of-the-art classifiers for facial expression recognition (FER) can achieve a high level of accuracy, they lack interpretability, an important feature for end-users.
+Experts typically associate spatial action units (AU) from a codebook to facial regions for the visual interpretation of expressions.
+In this paper, the same expert steps are followed. A new learning strategy is proposed to explicitly incorporate AU cues into classifier training, allowing to train deep interpretable models.
 During training, this AU codebook is used, along with the input image expression label, and facial landmarks, to construct a AU heatmap that indicates the most discriminative image regions of interest w.r.t the facial expression. This valuable spatial cue is leveraged to train a deep interpretable classifier for FER.
 This is achieved by constraining the spatial layer features of a classifier to be correlated with AU heatmaps. Using a composite loss, the classifier is trained to correctly classify an image while yielding interpretable visual layer-wise attention correlated with AU maps, simulating the expert decision process. Our strategy only relies on image class expression for supervision, without additional manual annotations. Our new strategy is generic, and can be applied to any deep CNN- or transformer-based classifier without requiring any architectural change or significant additional training time.
 Our extensive evaluation on two public benchmarks RAFDB, and AFFECTNET datasets shows that our proposed strategy can improve layer-wise interpretability without degrading classification performance. In addition, we explore a common type of interpretable classifiers that rely on class activation mapping (CAM) methods, and show that our approach can also improve CAM interpretability.
@@ -38,6 +38,7 @@ Our extensive evaluation on two public benchmarks RAFDB, and AFFECTNET datasets 
 * [Datasets](#datasets)
 * [Data preparation](#prep-data)
 * [Run code](#run)
+* [Pretrained weights (evaluation)](#weights)
 
 <!-- ## <a name='overview'> Overview</a>: -->
 
@@ -307,3 +308,25 @@ Once you download the datasets, you need to adjust the paths in
          --guid_orth_ft False \
          --exp_id 01_26_2024_15_19_40_248783__324660
 ```
+
+## <a name="weights"> Pretrained weights (evaluation) </a>:
+We provide the weights for all the models (44 weights: 2 datasets (RAF-DB, AffecNet) x 11 methods x 2 [with/without AUs]). Weights can be found at [Hugging Face](https://huggingface.co/sbelharbi/interpretable-fer-aus) in the file [shared-trained-models.tar.gz](https://huggingface.co/sbelharbi/interpretable-fer-aus/resolve/main/folds.tar.gz?download=true).
+To run a single case:
+```bash
+python eval.py --cudaid 0 --split test --checkpoint_type best --exp_path $rootdir/shared-trained-models/FG_FER/AffectNet/resnet50/STD_CL/CAM/align_atten_to_heatmap_True/AffectNet-resnet50-CAM-WGAP-cp_best-boxv2_False
+```
+To run all 44 cases:
+```bash
+./eval_all,sh 0
+```
+To evaluate a single image only, you can use:
+```bash
+python single_img_eval.py --cudaid 0 --checkpoint_type best --exp_path $rootdir/shared-trained-models/FG_FER/RAF-DB/resnet50/STD_CL/CAM/align_atten_to_heatmap_True/RAF-DB-resnet50-CAM-WGAP-cp_best-boxv2_False
+```
+
+The evaluation performance classification and localization to reproduce this table from the paper:
+<p align="center"><img src="doc/table.png" alt="outline" width="60%"></p>
+
+We also provide the folds and the facial landmarks in [Hugging Face](https://huggingface.co/sbelharbi/interpretable-fer-aus) in the file [folds.tar.gz](https://huggingface.co/sbelharbi/interpretable-fer-aus/resolve/main/folds.tar.gz?download=true)
+
+Decompress both files into the root of this repository.
