@@ -317,7 +317,7 @@ python eval.py --cudaid 0 --split test --checkpoint_type best --exp_path $rootdi
 ```
 To run all 44 cases:
 ```bash
-./eval_all,sh 0
+./eval_all.sh 0
 ```
 To evaluate a single image only, you can use:
 ```bash
