@@ -11,7 +11,7 @@ conda activate fer
 cudaid=$1
 export CUDA_VISIBLE_DEVICES=$cudaid
 
-rootdir=/absolute/path/to/here  # e.g. /home/user_name/code/facial-expression-recognition
+rootdir=/absolute/path/to/here  # e.g. /home/user_name/code/interpretable-fer-aus
 
 
 python eval.py --cudaid 0 --split test --checkpoint_type best --exp_path $rootdir/shared-trained-models/FG_FER/AffectNet/resnet50/STD_CL/CAM/align_atten_to_heatmap_True/AffectNet-resnet50-CAM-WGAP-cp_best-boxv2_False 
