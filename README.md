@@ -327,6 +327,6 @@ python single_img_eval.py --cudaid 0 --checkpoint_type best --exp_path $rootdir/
 The provided weights can be used to reproduce the classification and localization performance reported in the paper in this table:
 <p align="center"><img src="doc/table.png" alt="outline" width="60%"></p>
 
-We also provide the folds and the facial landmarks in [Hugging Face](https://huggingface.co/sbelharbi/interpretable-fer-aus) in the file [folds.tar.gz](https://huggingface.co/sbelharbi/interpretable-fer-aus/resolve/main/folds.tar.gz?download=true). For RAF-DB dataset, you need to crop and align the dataset using this code (see above in the readme) so the facial landmark match. For AffectNet, you can use the provided version of the dataset.
+We also provide the folds and the facial landmarks in [Hugging Face](https://huggingface.co/sbelharbi/interpretable-fer-aus) in the file [folds.tar.gz](https://huggingface.co/sbelharbi/interpretable-fer-aus/resolve/main/folds.tar.gz?download=true). For RAF-DB dataset, you need to crop and align the dataset using this code (see above in the readme) so the facial landmarks match. For AffectNet, you can use the provided version of the dataset.
 
 Decompress both files into the root of this repository.
