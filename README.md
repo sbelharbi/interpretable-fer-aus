@@ -10,7 +10,7 @@ by **Soufiane Belharbi<sup>1</sup>, Marco Pedersoli<sup>1</sup>, Alessandro Lame
 <p align="center"><img src="doc/promo.png" alt="outline" width="60%"></p>
 
 
- [[Spotlight]](./doc/spotlight-fg-29.pdf) [[Poster]](./doc/poster-fg-29.pdf)
+ [[Spotlight]](./doc/spotlight-fg.pdf) [[Poster]](./doc/poster-fg.pdf)
 
 ## Abstract
 Although state-of-the-art classifiers for facial expression recognition (FER) can achieve a high level of accuracy, they lack interpretability, an important feature for end-users.
