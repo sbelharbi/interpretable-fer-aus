@@ -311,7 +311,7 @@ Once you download the datasets, you need to adjust the paths in
 ```
 
 ## <a name="weights"> Pretrained weights (evaluation) </a>:
-We provide the weights for all the models (44 weights: 2 datasets (RAF-DB, AffecNet) x 11 methods x 2 [with/without AUs]). Weights can be found at [Hugging Face](https://huggingface.co/sbelharbi/interpretable-fer-aus) in the file [shared-trained-models.tar.gz](https://huggingface.co/sbelharbi/interpretable-fer-aus/resolve/main/folds.tar.gz?download=true).
+We provide the weights for all the models (44 weights: 2 datasets (RAF-DB, AffecNet) x 11 methods x 2 [with/without AUs]). Weights can be found at [Hugging Face](https://huggingface.co/sbelharbi/interpretable-fer-aus) in the file [shared-trained-models.tar.gz](https://huggingface.co/sbelharbi/interpretable-fer-aus/resolve/main/shared-trained-models.tar.gz?download=true).
 To run a single case:
 ```bash
 python eval.py --cudaid 0 --split test --checkpoint_type best --exp_path $rootdir/shared-trained-models/FG_FER/AffectNet/resnet50/STD_CL/CAM/align_atten_to_heatmap_True/AffectNet-resnet50-CAM-WGAP-cp_best-boxv2_False
