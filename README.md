@@ -7,6 +7,9 @@ by **Soufiane Belharbi<sup>1</sup>, Marco Pedersoli<sup>1</sup>, Alessandro Lame
 <br/>
 <sup>2</sup> Dept. of Health, Kinesiology \& Applied Physiology, Concordia University, Montreal, Canada
 
+[![arXiv](https://img.shields.io/badge/arXiv-2402.00281-b31b1b.svg)](https://arxiv.org/abs/2402.00281)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Weights-yellow)](https://huggingface.co/sbelharbi/interpretable-fer-aus)
+
 <p align="center"><img src="doc/promo.png" alt="outline" width="60%"></p>
 
 
