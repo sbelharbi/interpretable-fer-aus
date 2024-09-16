@@ -119,6 +119,20 @@ pip install -e .
 
 cd $cdir
 
+#  face.evoLVe: https://github.com/ZhaoJ9014/face.evoLVe
+# 722ecfd769006c9c9de1cf81203807e02ddac7e5
+
+if [ ! -d "face_evoLVe" ]; then
+  git clone https://github.com/ZhaoJ9014/face.evoLVe.git
+  cd face.evoLVe
+  git checkout 722ecfd769006c9c9de1cf81203807e02ddac7e5
+  rm -rf .git
+  cd ..
+  mv "face.evoLVe" "face_evoLVe"
+fi
+
+cd $cdir
+
 cd $cdir/dlib/crf/crfwrapper/bilateralfilter
 swig -python -c++ bilateralfilter.i
 python setup.py install
